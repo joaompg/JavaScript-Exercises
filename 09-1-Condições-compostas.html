@@ -1,0 +1,31 @@
+<!--Condições compostas no navegador-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Sua nacionalidade: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="checar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function checar() {
+            var txtnacio = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            var result = String(txtnacio.value)
+            res.innerHTML = `<p>Sua nacionalidade é <strong>${result}</strong>!</p>`
+            if (result == 'Brasileira') {
+                res.innerHTML+= `<p>Tudo certo! Você é brasileiro.</p>`
+            } else{
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
