@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilocalc.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section>
+        <div id="numeros">
+            <input type="number" name="txtnum1" id="txtnum1">
+            <input type="number" name="txtnum2" id="txtnum2">
+        </div>
+        <div>
+            <input type="button" value="+" id="somar" onclick="calcular(this.id)">
+            <input type="button" value="-" id="diminuir" onclick="calcular(this.id)">
+            <input type="button" value="x" id="multiplicar" onclick="calcular(this.id)">
+            <input type="button" value=":" id="dividir" onclick="calcular(this.id)">       
+        </div>
+        <div id="resultado">
+           
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Nomade</p>
+    </footer>
+    <script src="scriptcalc.js"></script>
+</body>
+</html>
